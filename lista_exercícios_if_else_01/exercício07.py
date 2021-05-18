@@ -9,6 +9,6 @@ elif l ==4:
     print("Quadrado com area = {}".format(l*l))
 elif l == 5:
     temp = ((3*l**2) * math.sqrt(3)) / 2
-    print("Pentagono com area = {}".format(temp)))
+    print("Pentagono com area = {}".format(temp))
 else:
     print("Valor invalido de poligono")

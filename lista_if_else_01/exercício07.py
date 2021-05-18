@@ -14,7 +14,7 @@ if temp < a < (b+c):
         if temp<0:
             temp = temp*-1
         if temp < c < a+b:
-            if a = b = c:
+            if a == b == c:
                 print("é um triangulo equilatero")
             elif a != b != c and a != c:
                 print("É um triangulo escaleno")
