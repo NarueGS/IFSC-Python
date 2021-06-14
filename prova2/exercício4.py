@@ -6,8 +6,7 @@ lista = list(input("Digite uma frase  "))
 lista2 = []
 lista2 = lista.copy()
 lista2.reverse()
-print(lista)
 if lista2 == lista:
-    print("A")
+    print("é um palíndromo")
 else: 
-    print("B")
+    print("Não é um palíndromo")

@@ -22,7 +22,4 @@ for letter in lista:
     if letter != ' ':
         if dic[letter][0] == False:
             dic[letter][0] = True
-            print("hello")
-            cont+=1
-            print(cont, letter)
 print(cont)
