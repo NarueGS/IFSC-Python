@@ -1,0 +1,15 @@
+﻿{% extends "base.html" %}
+
+{% block title %}{{tarefa.nome}}{% endblock %}
+
+{% block content %}
+	<h1 class = "display-4">{{tarefa.nome}}</h1>
+	<p class="lead">
+		{{tarefa.detalhamento|linebreaks}}
+	</p>
+	{% for item in itens %}
+	<p>
+		{{item.descricao}} - {{item.percentual}}
+	</p>
+	{% endfor %}
+{% endblock %}

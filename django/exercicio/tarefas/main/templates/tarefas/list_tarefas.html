@@ -1,0 +1,15 @@
+﻿{% extends "base.html" %}
+
+{% block title %}Tarefas{% endblock %}
+
+{% block content %}
+<h1 class="display-4">Tarefas</h1>
+{% for tarefa in tarefas %}
+<h2>
+	<a href="{{tarefa.get_absolute_url}}" class="link-info">
+		{{tarefa.nome}}
+	</a>
+</h2>
+{{tarefa.detalhamento|truncatewords:30|linebreaks}}
+{% endfor %}
+{% endblock %}
